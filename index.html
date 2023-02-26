@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/cards.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <title>ForestFriends</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <div class="bx bx-leaf" id = "logopic"></div> 
+            Forest Friends
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links navbar">
+                <li><a href="#home-start"><div class="bx bx-home-alt-2"></div><h6>Home</h6></a></li>
+                <li><a href="#join-start"><div class="bx bx-male-female"></div><h6>Join Us</h6></a></li>
+                <li><a href="#leaderB"><div class="bx bx-bar-chart-alt-2"></div><h6>LeaderBoard</h6></a></li>
+                <li><a href="#events"><div class="bx bx-calendar"></div><h6>Events</h6></a></li>
+                <li><a href="#footer"><div class="bx bx-at"></div><h6>Social</h6></a></li>              
+            </ul>
+        </nav>
+    </header>
+    <!-- Home -->
+    <br><br><br>
+    <div id="home-start"><br><br></div>
+    <section class ="home" id="home">
+        <div class="tag_text">20 million+ trees are in the ground! JOIN THE MOVEMENT!</div>   
+        <div class="hashtag ">#ForestFriends</div> 
+        <div class="back">
+            <img src="images/home_background1.jpg!bwr800" alt="home_background: green landscape">
+        </div>        
+        <div class="tree-count" id="counter">24,318,504</div>
+    </section><br><br>
+    <div id="join-start"><br></div>
+    <!-- Join -->
+    <section class="join" id="join">
+        <div class="join-head">
+            <h1>Join #ForestFriends</h1>
+            <h6>1$ plants a tree</h6>
+        </div>
+        <div class="container donationcard-form">
+            <div class="row">
+            
+                <button class="button t5">50</button>
+                <button class="button t10">100</button>
+                <button class="button t50">500</button>
+                <button class="button t100">1000</button>
+                <input class="input textarea" type="text" id="trees" placeholder="Other Amount" >
+                <input class="textarea" type="text" id="name" placeholder="Your Name">
+                <input class="textarea" type="email"  id="email" placeholder="Your Email">
+                <textarea  class="textarea" id="message" cols="30" rows="1" placeholder="Write Message Here..."></textarea>
+                
+                <!-- <a href="#home-start"><button class="button contact-button" id="submit" onclick="openPopup();" >submit</button></a> -->
+
+                <a href="#home-start"><button class="button contact-button" id="submit" onclick="sendEmailtoOwner(); sendEmailtoUser(); openPopup();" >submit</button></a>
+                <div class="popup" id="popup">
+                    <img src="images/logo.png" alt="tree-logo-image">
+                    <br>
+                    <h1>Thank you for your contribution!</h1>
+                    <p>Check your email - we have sent a confirmation email</p>
+                    <p class="message1"></p>
+                    <button type="button" onclick="closePopup();">OK</button>
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <!-- LeaderBoard -->
+    <section class="leaderB" id="leaderB">
+        <br>
+        <h1>LEADERBOARD</h1>
+    <div class="LBgrid">
+        <div class="person">
+            <img src="images/logo1.png" alt="logo">
+            <h4>
+            <br> Tobi Lutke - For the Lorax <br>
+            <b>1,000,001 trees</b></h4>
+            <h6>@tobi</h6>
+            <h6 id="date">10/31/2019, 2:30:00 AM</h6>
+        </div>
+        <div class="person">
+            <img src="images/logo1.png" alt="logo">
+            <h4>
+            <br> Elon Musk - For Treebeard <br>
+            <b>1,000,000 trees</b></h4><h6>@tobi</h6>
+            <h6 id="date">10/30/2019, 5:30:00 AM</h6>
+        </div>
+        <div class="person">
+            <img src="images/logo1.png" alt="logo">
+            <h4>
+            <br> Marc Benioff - For Treelon <br>
+            <b>900,000 trees</b></h4><h6>@tobi</h6>
+            <h6 id="date">11/7/2019, 4:11:09 AM</h6>
+        </div>
+    </div>
+  
+    </section>
+    <br><br><br>
+    <!-- Events -->
+        <h1 class="event_title" id="events"><br>EVENTS</h1>
+    
+    <section class ="events">
+        
+        <div class="card">
+            <div class="card_inner">
+                <div class="card_face card_face_front">
+                    <h3>  Mississippi, United States</h3>
+                </div>
+                
+                <div class="card_face card_face_back">
+                    <img src="images/california.jpg" alt="Plantation: Mississippi, United States">
+                    <h3>May 8, 2014 |
+                        2389 plants</h3>
+                       <p> The Mississippi Delta was once a 24-million-acre forested wetland. 
+                        Today only 4.4 million forested acres remain, mostly in small patches, 
+                        leading to water quality and habitat issues.
+
+                       </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_inner">
+                <div class="card_face card_face_front">
+                    <h3>British Columbia, Canada</h3>
+                </div>
+                
+                <div class="card_face card_face_back">
+                    <img src="images/canada.jpg" alt="Plantation: British Columbia, Canada">
+                    <h3>Feb 13, 2017 |
+                        6753 plants</h3>
+                       <p> In 2017, the Hanceville Fire raged through British Columbia, burning 240,000 hectares of land. 
+                        Because of the extreme heat, 
+                        portions of burned forestland cannot regenerate naturally and must be replanted.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_inner">
+                <div class="card_face card_face_front">
+                    <h3>Sadahalli Lake , Bengaluru</h3>
+                </div>
+                
+                <div class="card_face card_face_back">
+                    <img src="images/india.jpg" alt="Plantation: Sadahalli Lake , Bengaluru">
+                    <h3>Aug 11, 2021 |
+                        5700 plants</h3>
+                       <p> 5,700 saplings are being planted around Sadahalli Lake, 
+                        Bengaluru to increase green cover of Karnataka. 
+                        Over 100 acre of land is being covered to grow saplings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <h1>#ForestFriends</h1>
+        <div class="footer-social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div> 
+    </div>
+
+    <div class="copyright">
+        <p>Created by <a href="">Manasi Deshmukh</a> @WebCamp2023 | All Right Reserved.</p>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/cards.js"></script>
+</body>
+</html>
